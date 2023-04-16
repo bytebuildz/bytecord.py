@@ -6,7 +6,7 @@ with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
 version = ''
-with open('bytecord/__init__.py') as f:
+with open('liftcord/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 if not version:
@@ -57,19 +57,19 @@ extras_require = {
 }
 
 packages = [
-    'bytecord',
-    'bytecord.types',
-    'bytecord.ui',
-    'bytecord.webhook',
-    'bytecord.app_commands',
-    'bytecord.ext.commands',
-    'bytecord.ext.tasks',
+    'liftcord',
+    'liftcord.types',
+    'liftcord.ui',
+    'liftcord.webhook',
+    'liftcord.app_commands',
+    'liftcord.ext.commands',
+    'liftcord.ext.tasks',
 ]
 
 setup(
-    name='bytecord.py',
-    author='.drmr',
-    url='https://github.com/bytebuildz/bytecord.py',
+    name='liftcord.py',
+    author='Rapptz',
+    url='https://github.com/devliftz/liftcord.py',
     project_urls={
         'Documentation': 'https://discordpy.readthedocs.io/en/latest/',
         'Issue tracker': 'https://github.com/Rapptz/discord.py/issues',
@@ -77,7 +77,7 @@ setup(
     version=version,
     packages=packages,
     license='MIT',
-    description='A Python wrapper for the Discord API. bytecord.py',
+    description='A Python wrapper for the Discord API',
     long_description=readme,
     long_description_content_type='text/x-rst',
     include_package_data=True,

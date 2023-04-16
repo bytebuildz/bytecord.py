@@ -30,7 +30,7 @@ import argparse
 import sys
 from pathlib import Path
 
-import discord
+import liftcord
 import importlib.metadata
 import aiohttp
 import platform
